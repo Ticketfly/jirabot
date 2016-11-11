@@ -21,3 +21,7 @@ For local development, you can do this with a `.env` file, which we've helpfully
     foreman start
 
 This will open your connection to the Slack API, and your bot will be online. You can connect to it and chat with it directly (it'll behave the same way).
+
+## Running with Docker
+
+`docker run -e SLACK_API_TOKEN=$SLACK_API_TOKEN -e JIRA_USER=$JIRA_USER -e JIRA_PASS=$JIRA_PASS -e JIRA_PREFIX=$JIRA_PREFIX ticketfly/jirabot`
